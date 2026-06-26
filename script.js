@@ -3,6 +3,7 @@ const opening = document.getElementById("opening");
 const invitation = document.getElementById("invitation");
 
 const storyText = document.getElementById("storyText");
+
 const locationBtn = document.querySelector(".location-btn");
 const rsvpBtn = document.querySelector(".rsvp-btn");
 
@@ -121,63 +122,10 @@ locationBtn.addEventListener("click", () => {
 /*=========================================
           RSVP BUTTON
 =========================================*/
-/*=========================================
-          RSVP BUTTON
-=========================================*/
 
 rsvpBtn.addEventListener("click", () => {
 
-    const message = document.createElement("div");
-
-    message.innerHTML = `
-        <div style="
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        ">
-            <div style="
-                background: #fff;
-                padding: 30px;
-                border-radius: 20px;
-                text-align: center;
-                max-width: 350px;
-                width: 90%;
-                box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-                font-family: 'Playfair Display', serif;
-            ">
-                <h2 style="margin-bottom:15px;">Thank You! 🤍</h2>
-
-                <p style="margin-bottom:20px;">
-                    Please contact us to confirm your attendance. ♡
-                </p>
-
-                <button id="closeMsg" style="
-                    padding:10px 25px;
-                    border:none;
-                    border-radius:25px;
-                    background:#d4af7a;
-                    color:white;
-                    cursor:pointer;
-                    font-size:16px;
-                ">
-                    OK
-                </button>
-            </div>
-        </div>
-   ` ;
-
-    document.body.appendChild(message);
-
-    document.getElementById("closeMsg").addEventListener("click", () => {
-        message.remove();
-    });
+    alert("Thank you! Please contact us to confirm your attendance. 🤍");
 
 });
 const weddingDate = new Date("November 21, 2026 19:00:00").getTime();
