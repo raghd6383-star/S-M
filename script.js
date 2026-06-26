@@ -133,7 +133,7 @@ locationBtn.addEventListener("click", () => {
 rsvpBtn.addEventListener("click", () => {
     const message = document.createElement("div");
 
-    message.innerHTML = 
+    message.innerHTML = `
         <div style="
             position: fixed;
             top: 50%;
@@ -156,7 +156,7 @@ rsvpBtn.addEventListener("click", () => {
                 cursor:pointer;
             ">OK</button>
         </div>
-    ;
+   ` ;
 
     document.body.appendChild(message);
 
