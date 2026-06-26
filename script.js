@@ -125,7 +125,7 @@ locationBtn.addEventListener("click", () => {
 
 rsvpBtn.addEventListener("click", () => {
 
-    alert("Thank you! Please contact us to confirm your attendance. 🤍");
+    document.getElementById("popup").style.display = "flex";
 
 });
 const weddingDate = new Date("November 21, 2026 19:00:00").getTime();
