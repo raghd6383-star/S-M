@@ -9,6 +9,8 @@ const locationBtn = document.querySelector(".location-btn");
 const rsvpBtn = document.querySelector(".rsvp-btn");
 
 const music = document.getElementById("music");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
 
 /*=========================================
             STORY
@@ -120,15 +122,6 @@ locationBtn.addEventListener("click", () => {
 
 });
 
-/*=========================================
-          RSVP BUTTON
-=========================================*/
-
-rsvpBtn.addEventListener("click", () => {
-
-    alert("Thank you! Please contact us to confirm your attendance. 🤍");
-
-});
 /*=========================================
             COUNTDOWN
 =========================================*/
@@ -265,5 +258,30 @@ document.querySelectorAll("button").forEach(button=>{
         button.style.transform="translateY(0)";
 
     });
+
+});
+/*=========================================
+            RSVP POPUP
+=========================================*/
+
+rsvpBtn.addEventListener("click", () => {
+
+    popup.classList.add("show");
+
+});
+
+closePopup.addEventListener("click", () => {
+
+    popup.classList.remove("show");
+
+});
+
+popup.addEventListener("click", (e) => {
+
+    if(e.target === popup){
+
+        popup.classList.remove("show");
+
+    }
 
 });
