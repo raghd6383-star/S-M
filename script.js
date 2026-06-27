@@ -1,3 +1,4 @@
+
 const envelope = document.querySelector(".envelope");
 const opening = document.getElementById("opening");
 const invitation = document.getElementById("invitation");
@@ -128,6 +129,10 @@ rsvpBtn.addEventListener("click", () => {
     alert("Thank you! Please contact us to confirm your attendance. 🤍");
 
 });
+/*=========================================
+            COUNTDOWN
+=========================================*/
+
 const weddingDate = new Date("November 21, 2026 19:00:00").getTime();
 
 function updateCountdown() {
